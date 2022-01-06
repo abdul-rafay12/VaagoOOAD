@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VaagoProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="account_ID" />
+    </Key>
+    <Property Name="account_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="account_type" Type="int" />
+    <Property Name="name" Type="nvarchar" MaxLength="320" />
+    <Property Name="email" Type="nvarchar" MaxLength="320" />
+    <Property Name="pass" Type="nvarchar" MaxLength="320" />
+    <Property Name="phone" Type="nvarchar" MaxLength="320" />
+    <Property Name="location" Type="nvarchar" MaxLength="320" />
+  </EntityType>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="account_ID" Type="int" />
+    <Property Name="itemID" Type="int" />
+    <Property Name="itemQuantity" Type="int" />
+    <Property Name="totalAmount" Type="int" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="itemID" />
+    </Key>
+    <Property Name="itemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="itemName" Type="varchar" MaxLength="320" />
+    <Property Name="itemDesc" Type="varchar" MaxLength="320" />
+    <Property Name="itemImgpath" Type="varchar" MaxLength="320" />
+    <Property Name="itemCategory" Type="varchar" MaxLength="320" />
+    <Property Name="itemPrice" Type="varchar" MaxLength="320" />
+    <Property Name="itemSKU" Type="varchar" MaxLength="12" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Order_Details">
+    <Key>
+      <PropertyRef Name="detailID" />
+    </Key>
+    <Property Name="detailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderID" Type="int" />
+    <Property Name="itemQuantity" Type="int" />
+    <Property Name="itemID" Type="int" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="orderID" />
+    </Key>
+    <Property Name="orderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="orderTime" Type="varchar" MaxLength="320" />
+    <Property Name="orderDate" Type="varchar" MaxLength="320" />
+    <Property Name="orderStatus" Type="varchar" MaxLength="320" />
+    <Property Name="numberOfItems" Type="varchar" MaxLength="320" />
+    <Property Name="Amount" Type="varchar" MaxLength="320" />
+    <Property Name="deliveryCharges" Type="varchar" MaxLength="320" />
+    <Property Name="City" Type="varchar" MaxLength="320" />
+    <Property Name="notes" Type="varchar" MaxLength="320" />
+  </EntityType>
+  <EntityType Name="Reservations">
+    <Key>
+      <PropertyRef Name="reserveID" />
+    </Key>
+    <Property Name="reserveID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Reservation Number" Type="varchar" MaxLength="15" StoreGeneratedPattern="Computed" />
+    <Property Name="byName" Type="nvarchar" MaxLength="320" />
+    <Property Name="byEmail" Type="nvarchar" MaxLength="320" />
+    <Property Name="byContact" Type="nvarchar" MaxLength="320" />
+    <Property Name="numberOfPersons" Type="int" />
+    <Property Name="reserveDateTime" Type="nvarchar" MaxLength="320" />
+    <Property Name="eventType" Type="nvarchar" MaxLength="320" />
+    <Property Name="byMessage" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="roleID" />
+    </Key>
+    <Property Name="roleID" Type="int" Nullable="false" />
+    <Property Name="roleName" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SiteMessages">
+    <Key>
+      <PropertyRef Name="msgID" />
+    </Key>
+    <Property Name="msgID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="msgName" Type="varchar" MaxLength="320" />
+    <Property Name="msgEmail" Type="varchar" MaxLength="320" />
+    <Property Name="msgSubject" Type="varchar" MaxLength="320" />
+    <Property Name="msgBody" Type="varchar" MaxLength="320" />
+  </EntityType>
+  <Association Name="FK__Accounts__accoun__2DE6D218">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="roleID" />
+      </Principal>
+      <Dependent Role="Accounts">
+        <PropertyRef Name="account_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cart__itemID__1F63A897">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="0..1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="itemID" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="itemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Order_Det__itemI__7A3223E8">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="0..1" />
+    <End Role="Order_Details" Type="Self.Order_Details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="itemID" />
+      </Principal>
+      <Dependent Role="Order_Details">
+        <PropertyRef Name="itemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Order_Det__order__7849DB76">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="0..1" />
+    <End Role="Order_Details" Type="Self.Order_Details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="orderID" />
+      </Principal>
+      <Dependent Role="Order_Details">
+        <PropertyRef Name="orderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Customer__756D6ECB">
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="account_ID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="VaagoProjectModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cart" EntityType="Self.Cart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order_Details" EntityType="Self.Order_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reservations" EntityType="Self.Reservations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SiteMessages" EntityType="Self.SiteMessages" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Accounts__accoun__2DE6D218" Association="Self.FK__Accounts__accoun__2DE6D218">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Accounts" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cart__itemID__1F63A897" Association="Self.FK__Cart__itemID__1F63A897">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Order_Det__itemI__7A3223E8" Association="Self.FK__Order_Det__itemI__7A3223E8">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="Order_Details" EntitySet="Order_Details" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Order_Det__order__7849DB76" Association="Self.FK__Order_Det__order__7849DB76">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Order_Details" EntitySet="Order_Details" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Customer__756D6ECB" Association="Self.FK__Orders__Customer__756D6ECB">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

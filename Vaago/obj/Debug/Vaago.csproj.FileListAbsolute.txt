@@ -1,0 +1,88 @@
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\Vaago.dll.config
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\Vaago.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\Vaago.pdb
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\Antlr3.Runtime.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\Microsoft.Web.Infrastructure.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\Newtonsoft.Json.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.Helpers.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.Mvc.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.Optimization.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.Razor.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.WebPages.Deployment.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.WebPages.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.WebPages.Razor.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\WebGrease.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.Helpers.xml
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.Mvc.xml
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.Optimization.xml
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.Razor.xml
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.WebPages.xml
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.WebPages.Deployment.xml
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\System.Web.WebPages.Razor.xml
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\Newtonsoft.Json.xml
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\Antlr3.Runtime.pdb
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\obj\Debug\Vaago.csprojAssemblyReference.cache
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\obj\Debug\Vaago.csproj.CoreCompileInputs.cache
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\obj\Debug\Vaago.csproj.CopyComplete
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\obj\Debug\Vaago.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\obj\Debug\Vaago.pdb
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\EntityFramework.dll
+D:\Uni Data 4th Sems\DBMS\Project\Vaago\Vaago\bin\EntityFramework.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\Vaago.dll.config
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\Vaago.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\Vaago.pdb
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\Antlr3.Runtime.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\EntityFramework.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\Newtonsoft.Json.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.Helpers.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.Mvc.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.Optimization.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.Razor.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.WebPages.Deployment.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.WebPages.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.WebPages.Razor.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\WebGrease.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\EntityFramework.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.Helpers.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.Mvc.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.Optimization.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.Razor.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.WebPages.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.WebPages.Deployment.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\System.Web.WebPages.Razor.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\Newtonsoft.Json.xml
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\bin\Antlr3.Runtime.pdb
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\obj\Debug\Vaago.csprojResolveAssemblyReference.cache
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\obj\Debug\Vaago.dll
+C:\Users\moiza\Downloads\Project\Project\Vaago\Vaago\obj\Debug\Vaago.pdb
+E:\Project\Vaago\Vaago\bin\Vaago.dll.config
+E:\Project\Vaago\Vaago\bin\Vaago.dll
+E:\Project\Vaago\Vaago\bin\Vaago.pdb
+E:\Project\Vaago\Vaago\bin\Antlr3.Runtime.dll
+E:\Project\Vaago\Vaago\bin\EntityFramework.dll
+E:\Project\Vaago\Vaago\bin\Microsoft.Web.Infrastructure.dll
+E:\Project\Vaago\Vaago\bin\Newtonsoft.Json.dll
+E:\Project\Vaago\Vaago\bin\System.Web.Helpers.dll
+E:\Project\Vaago\Vaago\bin\System.Web.Mvc.dll
+E:\Project\Vaago\Vaago\bin\System.Web.Optimization.dll
+E:\Project\Vaago\Vaago\bin\System.Web.Razor.dll
+E:\Project\Vaago\Vaago\bin\System.Web.WebPages.Deployment.dll
+E:\Project\Vaago\Vaago\bin\System.Web.WebPages.dll
+E:\Project\Vaago\Vaago\bin\System.Web.WebPages.Razor.dll
+E:\Project\Vaago\Vaago\bin\WebGrease.dll
+E:\Project\Vaago\Vaago\bin\EntityFramework.xml
+E:\Project\Vaago\Vaago\bin\System.Web.Helpers.xml
+E:\Project\Vaago\Vaago\bin\System.Web.Mvc.xml
+E:\Project\Vaago\Vaago\bin\System.Web.Optimization.xml
+E:\Project\Vaago\Vaago\bin\System.Web.Razor.xml
+E:\Project\Vaago\Vaago\bin\System.Web.WebPages.xml
+E:\Project\Vaago\Vaago\bin\System.Web.WebPages.Deployment.xml
+E:\Project\Vaago\Vaago\bin\System.Web.WebPages.Razor.xml
+E:\Project\Vaago\Vaago\bin\Newtonsoft.Json.xml
+E:\Project\Vaago\Vaago\bin\Antlr3.Runtime.pdb
+E:\Project\Vaago\Vaago\obj\Debug\Vaago.csproj.AssemblyReference.cache
+E:\Project\Vaago\Vaago\obj\Debug\Vaago.csproj.CoreCompileInputs.cache
+E:\Project\Vaago\Vaago\obj\Debug\Vaago.csproj.CopyComplete
+E:\Project\Vaago\Vaago\obj\Debug\Vaago.dll
+E:\Project\Vaago\Vaago\obj\Debug\Vaago.pdb

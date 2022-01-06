@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VaagoProjectModelStoreContainer" CdmEntityContainer="VaagoProjectEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="VaagoProjectModel.Account">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="account_ID" ColumnName="account_ID" />
+          <ScalarProperty Name="account_type" ColumnName="account_type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="location" ColumnName="location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="VaagoProjectModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="itemName" ColumnName="itemName" />
+          <ScalarProperty Name="itemDesc" ColumnName="itemDesc" />
+          <ScalarProperty Name="itemImgpath" ColumnName="itemImgpath" />
+          <ScalarProperty Name="itemCategory" ColumnName="itemCategory" />
+          <ScalarProperty Name="itemPrice" ColumnName="itemPrice" />
+          <ScalarProperty Name="itemSKU" ColumnName="itemSKU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_Details">
+      <EntityTypeMapping TypeName="VaagoProjectModel.Order_Details">
+        <MappingFragment StoreEntitySet="Order_Details">
+          <ScalarProperty Name="detailID" ColumnName="detailID" />
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="itemQuantity" ColumnName="itemQuantity" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservations">
+      <EntityTypeMapping TypeName="VaagoProjectModel.Reservation">
+        <MappingFragment StoreEntitySet="Reservations">
+          <ScalarProperty Name="reserveID" ColumnName="reserveID" />
+          <ScalarProperty Name="Reservation_Number" ColumnName="Reservation Number" />
+          <ScalarProperty Name="byName" ColumnName="byName" />
+          <ScalarProperty Name="byEmail" ColumnName="byEmail" />
+          <ScalarProperty Name="byContact" ColumnName="byContact" />
+          <ScalarProperty Name="numberOfPersons" ColumnName="numberOfPersons" />
+          <ScalarProperty Name="reserveDateTime" ColumnName="reserveDateTime" />
+          <ScalarProperty Name="eventType" ColumnName="eventType" />
+          <ScalarProperty Name="byMessage" ColumnName="byMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="VaagoProjectModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="roleID" ColumnName="roleID" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteMessages">
+      <EntityTypeMapping TypeName="VaagoProjectModel.SiteMessage">
+        <MappingFragment StoreEntitySet="SiteMessages">
+          <ScalarProperty Name="msgID" ColumnName="msgID" />
+          <ScalarProperty Name="msgName" ColumnName="msgName" />
+          <ScalarProperty Name="msgEmail" ColumnName="msgEmail" />
+          <ScalarProperty Name="msgSubject" ColumnName="msgSubject" />
+          <ScalarProperty Name="msgBody" ColumnName="msgBody" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="VaagoProjectModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="totalAmount" ColumnName="totalAmount" />
+          <ScalarProperty Name="itemQuantity" ColumnName="itemQuantity" />
+          <ScalarProperty Name="itemID" ColumnName="itemID" />
+          <ScalarProperty Name="account_ID" ColumnName="account_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="VaagoProjectModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="deliveryCharges" ColumnName="deliveryCharges" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="numberOfItems" ColumnName="numberOfItems" />
+          <ScalarProperty Name="orderStatus" ColumnName="orderStatus" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="orderTime" ColumnName="orderTime" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
